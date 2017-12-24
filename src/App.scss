@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Monoton");
+@import url("https://fonts.googleapis.com/css?family=Cabin|Pacifico");
+* {
+  margin: 0;
+  padding: 0 "";
+}
+$dark-blue: #3e496b;
+$yellow: #ecd641;
+$red: #ea315b;
+$light-blue:  #44b1d9;
+body {
+  background: $dark-blue;
+}
+.wrap {
+  background: $yellow;
+  width: 400px;
+  margin: 0 auto;
+  overflow: auto;
+  position: relative;
+}
+h2 {
+  color: $dark-blue;
+  font-size: 70px;
+  font-family: "Pacifico", cursive;
+}
+h2,
+form {
+  background: $red;
+  margin: auto;
+  padding: 10px 0;
+  text-align: center;
+}
+form {
+  padding: 0;
+}
+input {
+  border: none;
+  padding: 15px;
+  width: 100%;
+}
+input:focus {
+  outline: none;
+}
+ul.items {
+  width: 90%;
+  margin: 50px auto;
+  padding: 0;
+
+  li {
+    list-style: none;
+    border-bottom: 3px solid $light-blue;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Cabin", sans-serif;
+    position: relative;
+  }
+  li span {
+    font-size: 13px;
+    margin-left: 5px;
+    position: relative;
+    color: $light-blue;
+  }
+  li span:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    top: 0;
+    left: -5px;
+    border: 2px solid $light-blue;
+    border-radius: 50%;
+  }
+}
+/*a {
+  text-decoration: none;
+  position: absolute;
+  background: #ecd641;
+  color: #3e496b;
+  font-weight: bolder;
+  right: 0;
+  padding: 3px;
+}*/
+
+
+
+.menu{
+  width:100%;
+  padding:0;
+  overflow: auto;
+  li{
+    list-style:none;
+  }
+  a{
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    display: inline-block;
+    width:50%;
+    float: left;
+    color: black;
+    font-weight: bolder;
+    border-bottom: 2px solid $light-blue;
+    &:hover{
+      background: $red;
+      color:white;
+    }
+  }
+}

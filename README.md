@@ -1,0 +1,1 @@
+A todo app to demonstrate the use of react and firebase authentication and database
