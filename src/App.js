@@ -37,7 +37,7 @@ class App extends Component {
   addItem=(e)=> {
     e.preventDefault();
     this.itemsRef.push({
-      tem: this.todoItem.value, 
+      item: this.todoItem.value, 
       completed: false     
     })
   }

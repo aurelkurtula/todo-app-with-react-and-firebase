@@ -1,6 +1,5 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
-/src/fire.js
-/README.md
+/src/fire-sample.js
 # dependencies
 /node_modules
 
