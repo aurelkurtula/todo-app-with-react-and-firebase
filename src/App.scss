@@ -1,8 +1,9 @@
+@media screen { * , *:after,*:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box;  box-sizing: border-box;  } }* {margin: auto; padding: auto;}
 @import url("https://fonts.googleapis.com/css?family=Monoton");
 @import url("https://fonts.googleapis.com/css?family=Cabin|Pacifico");
 * {
   margin: 0;
-  padding: 0 "";
+  padding: 0;
 }
 $dark-blue: #3e496b;
 $yellow: #ecd641;
@@ -17,30 +18,33 @@ body {
   margin: 0 auto;
   overflow: auto;
   position: relative;
+  min-height: 650px;
 }
 h2 {
   color: $dark-blue;
   font-size: 70px;
-  font-family: "Pacifico", cursive;
-}
-h2,
-form {
+  font-family: "Pacifico", cursive; 
   background: $red;
   margin: auto;
   padding: 10px 0;
   text-align: center;
 }
 form {
+    background: $red;
+  margin: auto;
+  text-align: center;
   padding: 0;
+  input {
+    border: none;
+    padding: 15px;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
 }
-input {
-  border: none;
-  padding: 15px;
-  width: 100%;
-}
-input:focus {
-  outline: none;
-}
+
+
 ul.items {
   width: 90%;
   margin: 50px auto;
@@ -106,4 +110,48 @@ ul.items {
       color:white;
     }
   }
+}
+
+.auth{
+  margin: auto;
+  .facebook {
+    background: #4B64B1;
+    color: white;
+    width: 90%;
+    margin: 30px auto auto auto;
+    text-align: center;
+    padding: 20px 0;
+  }
+  form {
+    margin-top: 30px;
+    text-align: left;
+    width: 90%;
+  }
+  &, form {
+    background: $yellow;
+  }
+  input {
+    width: 100%;
+    margin-top: 5px;
+  }
+  input[type="submit"]{
+    margin: 0;
+    background: lighten(black, 80%);
+    padding: 20px 0;
+    color: black;
+  }
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+}
+.logOut {
+  text-decoration: none;
+  position: absolute;
+  background: #ECD641;
+  color: #3E496B;
+  font-weight: bolder;
+  right: 0;
+  top:0;
+  padding: 3px;
 }
